@@ -81,8 +81,18 @@
    ln -s ~/.dotfiles/nvim ~/.config/nvim
    ln -s ~/.dotfiles/htop/htoprc ~/.config/htop/htoprc
    ```
+6. **Check Symbolic Links**
 
-6. **Source Configuration Files**
+   Check symbolic links from the repository to your home directory for configuration files.
+
+   ```zsh
+   ls -l ~/.zshrc
+   ls -l ~/.gitconfig
+   ls -l ~/.config/nvim
+   sudo ls -l ~/.config/htop/htoprc
+   ```
+
+7. **Source Configuration Files**
 
    Source your `.zshrc` to apply changes without restarting your shell.
 
@@ -90,14 +100,14 @@
    source ~/.zshrc
    ```
 
-7. **Install a Nerd Font**
+8. **Install a Nerd Font**
 
    Choose and install a Nerd Font (e.g., D2CodingLigature Nerd Font) for emoji support.
 
    - Nerd Font homepage: [Nerdfonts](https://www.nerdfonts.com/#home)
    - Emoji cheat sheet: [Nerdfonts Cheat Sheet](https://www.nerdfonts.com/cheat-sheet)
 
-8. **Set Up Git and SSH Keys**
+9. **Set Up Git and SSH Keys**
 
    - Set your name & email
 
