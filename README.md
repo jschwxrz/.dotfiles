@@ -68,7 +68,7 @@
    Clone your dotfiles repository into a hidden directory (`~/.dotfiles`).
 
    ```zsh
-   git clone https://github.com/matsjfunke/dotfiles.git ~/.dotfiles
+   git clone https://github.com/jschwxrz/.dotfiles.git ~/.dotfiles
    ```
 
 5. **Create Symbolic Links**
