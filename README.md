@@ -43,7 +43,13 @@
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
    ```
 
-2. **Install Software from Brewfile**
+2. **Install Software from Brewfile and create .dotfiles directory**
+
+   If you do not already have a .dotfiles directory in your home folder, create it using:
+
+   ```zsh
+   mkdir ~/.dotfiles
+   ```
 
    Install the software listed in your Brewfile.
 
@@ -54,10 +60,10 @@
    To create a Brewfile from your current setup, run:
 
    ```zsh
-   brew list > ~/.dotfiles/Brewfile
+   brew bundle dump --file ~/.dotfiles/Brewfile
    ```
 
-3. **Clone Dotfiles Repository**
+4. **Clone Dotfiles Repository**
 
    Clone your dotfiles repository into a hidden directory (`~/.dotfiles`).
 
@@ -65,7 +71,7 @@
    git clone https://github.com/matsjfunke/dotfiles.git ~/.dotfiles
    ```
 
-4. **Create Symbolic Links**
+5. **Create Symbolic Links**
 
    Create symbolic links from the repository to your home directory for configuration files.
 
@@ -76,7 +82,7 @@
    ln -s ~/.dotfiles/htop/htoprc ~/.config/htop/htoprc
    ```
 
-5. **Source Configuration Files**
+6. **Source Configuration Files**
 
    Source your `.zshrc` to apply changes without restarting your shell.
 
@@ -84,14 +90,14 @@
    source ~/.zshrc
    ```
 
-6. **Install a Nerd Font**
+7. **Install a Nerd Font**
 
    Choose and install a Nerd Font (e.g., D2CodingLigature Nerd Font) for emoji support.
 
    - Nerd Font homepage: [Nerdfonts](https://www.nerdfonts.com/#home)
    - Emoji cheat sheet: [Nerdfonts Cheat Sheet](https://www.nerdfonts.com/cheat-sheet)
 
-7. **Set Up Git and SSH Keys**
+8. **Set Up Git and SSH Keys**
 
    - Set your name & email
 
