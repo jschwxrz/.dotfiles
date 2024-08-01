@@ -69,9 +69,6 @@ HISTFILE=~/.cache/zsh/history
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# Add Rust environment setup
-#. "$HOME/.cargo/env"
-
 # Google search from the terminal
 google_search() {
   query="$*"
@@ -80,17 +77,9 @@ google_search() {
 
 # Aliases 
 alias search="google_search"
-alias dc="docker-compose"
-alias python="python3"
 alias rm="rm -i"
 alias mv="mv -i"
 alias tree="tree -C"
-alias ta="tmux attach-session -t "
-alias tn="tmux new-session -s "
-alias tk="tmux kill-session -t "
 alias cp="cp -r"
 alias scp="scp -r"
 alias vim='nvim'
-alias icloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/"
-# alias ls="colorls" # requires sudo gem install colorls 
-alias tree="tree -I env"
