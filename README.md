@@ -97,7 +97,7 @@
    Source your `.zshrc` to apply changes without restarting your shell.
 
    ```zsh
-   source ~/.zshrc
+   source .dotfiles/zsh/.zshrc
    ```
 
 8. **Install a Nerd Font**
