@@ -60,7 +60,7 @@
    To create a Brewfile from your current setup, run:
 
    ```zsh
-   brew bundle dump --file ~/.dotfiles/Brewfile
+   brew bundle dump --file ~/.dotfiles/homebrew/Brewfile
    ```
 
 4. **Clone Dotfiles Repository**
