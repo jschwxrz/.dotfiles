@@ -42,7 +42,6 @@ git_prompt_info() {
 setopt PROMPT_SUBST
 PS1='%F{010}   %F{014}   %~ %(!.#.)  $(git_prompt_info)%f%k'
 
-
 # Runtime 
 function preexec() {
   timer=$(($(gdate +%s%0N)/1000000))
@@ -83,3 +82,4 @@ alias tree="tree -C"
 alias cp="cp -r"
 alias scp="scp -r"
 alias vim='nvim'
+alias ia="cd ~/Documents/GitHub/IA"
