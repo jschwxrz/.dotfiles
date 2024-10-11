@@ -82,4 +82,3 @@ alias tree="tree -C"
 alias cp="cp -r"
 alias scp="scp -r"
 alias vim='nvim'
-alias ia="cd ~/Documents/GitHub/IA"
