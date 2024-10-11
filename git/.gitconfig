@@ -5,4 +5,11 @@
         required = true
 [user]
         name = Jona Schwarz
-        email = 133047589+jschwxrz@users.noreply.github.com
+        email = jonaschwarz1@gmail.com
+        signingkey = ~/.ssh/id_ed25519
+
+[core]
+    pager = delta
+
+[delta]
+    line-numbers = true
