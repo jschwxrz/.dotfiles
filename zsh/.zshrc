@@ -16,7 +16,9 @@ unset __conda_setup
 export PATH=/opt/homebrew/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH" # postgresql
+# bun completions
+[ -s "/Users/jona/.bun/_bun" ] && source "/Users/jona/.bun/_bun"
 
 # Prompt
 autoload -Uz vcs_info
@@ -82,3 +84,5 @@ alias tree="tree -C"
 alias cp="cp -r"
 alias scp="scp -r"
 alias vim='nvim'
+alias clearall="cd; conda deactivate; clear"
+alias speed="networkquality"
